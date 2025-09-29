@@ -1,10 +1,5 @@
-// Content script entry point
-console.log("Content script loaded");
+console.log("Content script loaded ");
 
-/**
- * Function to capture the content of the currently opened email.
- * Tries multiple selectors to ensure Gmail's DOM variations are handled.
- */
 function getEmailContent() {
   const selectors = [".h7", ".a3s", ".gmail-quote", 'role = "presentation"'];
   for (const selector of selectors) {
